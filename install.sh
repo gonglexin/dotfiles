@@ -4,6 +4,7 @@ echo ''
 echo 'Install configuration files ......'
 
 link_file () {
+  rm -f $2
   ln -s "$1" "$2"
   echo "linked $1 to $2"
 }
